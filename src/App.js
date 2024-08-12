@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './component/Navbar'
+import Button from './component/Button'
+import Work from './component/Work'
+import Stripe from './component/Stripe'
+import Products from './component/Products'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w-full h-screen bg-zinc-900 text-white  '>
+      <Navbar/>
+      {/* <Button/> */}
+      < Work/>
+      <Stripe/>
+      <Products/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
